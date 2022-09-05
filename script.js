@@ -1,4 +1,5 @@
-const btn1 = document.getElementById('btn1');
+const btn1 = document.getElementById('btn1')
+const btn2 = document.getElementById('btn2')
 var Totalbedrag = parseFloat(0)
 
   function doEenDing() {
@@ -29,5 +30,6 @@ function Betaling(x) {
     element.appendChild(paragraph); // Voeg nieuwe paragraaf aan target div
     x.Betaling = true
     btn1.style.display = 'none'
+    btn2.style.display = 'none'
 
 }
