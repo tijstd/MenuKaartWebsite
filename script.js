@@ -1,4 +1,4 @@
-
+const btn1 = document.getElementById('btn1');
 var Totalbedrag = parseFloat(0)
 
   function doEenDing() {
@@ -28,6 +28,6 @@ function Betaling(x) {
     var element = document.getElementById("Betalen")//Pak de target div
     element.appendChild(paragraph); // Voeg nieuwe paragraaf aan target div
     x.Betaling = true
- 
+    btn1.style.display = 'none'
 
 }
