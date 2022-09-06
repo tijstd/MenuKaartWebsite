@@ -22,7 +22,7 @@ let menu = [
   {"id":6,"Dish":"Chocolate Cake","Price":4.50},
   {"id":7,"Dish":"Coffee and Mints","Price":2.50},
   {"id":8,"Dish":"Margarita lemon","Price":7.00},
-  {"id":9,"Dish":"Cosmopolitan","Price":7.99},
+  {"id":9,"Dish":"Cosmopolitan","Price":7.99},a
   {"id":10,"Dish":"Moscow Mule","Price":9.99},
   {"id":11,"Dish":"Pannenkoeken","Price":2.69},
   {"id": 11,"Dish": "RabarberTaart","Price": 3.99},
