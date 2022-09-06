@@ -15,7 +15,7 @@ function addElementWithValueToParent(element, value, parent){
 let menu = [
   {"id":0,"Dish":"Smoked Salmon","Price":16.25},
   {"id":1,"Dish":"Carrot Soup","Price":3.55},
-  {"id":2,"Dish":"Chicken Balerno","Price":9.35},
+  {"id":2,"Dish":"Chicken Balerno","Price":19.35},
   {"id":3,"Dish":"Roast Beef","Price":10.00},
   {"id":4,"Dish":"Pizza Americana","Price":10.20},
   {"id":5,"Dish":"Chocolate gateau","Price":4.00},
