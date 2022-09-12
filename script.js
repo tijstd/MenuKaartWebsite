@@ -104,3 +104,9 @@ function Betaling(x) {
     btn2.style.display = 'none'
 
 }
+
+fetch("http://worldtimeapi.org/api/timezone/Europe/Amsterdam", {
+      
+})
+.then(res => res.json())
+.then(resp => console.log(resp));
