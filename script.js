@@ -65,7 +65,7 @@ async function getData(url) {
   }
 }
 
-var UrlVanDeSite = getData('https://b10bc-weu-httptriggertijsfunction-fa.azurewebsites.net/api/HelloWorld');
+var UrlVanDeSite= getData('https://b10bc-weu-httptriggertijsfunction-fa.azurewebsites.net/api/HelloWorld');
 
 function doEenDing() {
 
