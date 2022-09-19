@@ -58,5 +58,11 @@
         "id": 11,
         "Dish": "Beste Taart Ever",
         "Price": 3.75
+    },
+    {
+        "id": 12,
+        "Dish": "Slechtste Taart Ever",
+        "Price": 3.00
     }
+
 ]
