@@ -54,24 +54,15 @@
         "Dish": "Pina Colada",
         "Price": 3.99
     },
-<<<<<<< HEAD
     {
-=======
-       {
->>>>>>> b28fd3fc834bcb6da6f8bcba70147a2e6dec98c3
         "id": 11,
         "Dish": "Beste Taart Ever",
         "Price": 3.75
     },
     {
         "id": 12,
-<<<<<<< HEAD
-        "Dish": "Nice Piasae",
-        "Price": 3.99
-=======
         "Dish": "Slechtste Taart Ever",
-        "Price": 1.00
->>>>>>> b28fd3fc834bcb6da6f8bcba70147a2e6dec98c3
+        "Price": 1.50
     }
 
 ]
