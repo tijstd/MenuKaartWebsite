@@ -54,7 +54,7 @@
         "Dish": "Pina Colada",
         "Price": 3.99
     },
-       {
+    {
         "id": 11,
         "Dish": "Beste Taart Ever",
         "Price": 3.75
@@ -62,7 +62,7 @@
     {
         "id": 12,
         "Dish": "Slechtste Taart Ever",
-        "Price": 3.00
+        "Price": 1.50
     }
 
 ]
