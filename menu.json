@@ -53,5 +53,15 @@
         "id": 10,
         "Dish": "Pina Colada",
         "Price": 3.99
+    },
+    {
+        "id": 11,
+        "Dish": "Beste Taart Ever",
+        "Price": 3.75
+    },
+    {
+        "id": 12,
+        "Dish": "Nice Pie",
+        "Price": 3.50
     }
 ]
