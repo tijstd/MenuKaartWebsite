@@ -2,7 +2,7 @@ const btn1 = document.getElementById('btn1')
 const btn2 = document.getElementById('btn2')
 var Totalbedrag = parseFloat(0)
 var GlobalVariable; 
-
+var url2 = "https://b10bc-weu-httptriggertijsfunction-fa.azurewebsites.net/api/tablefunction"
 
 function addElementWithValueToParent(element, value, parent){
   var element = document.createElement(element);
@@ -12,9 +12,10 @@ function addElementWithValueToParent(element, value, parent){
   element.appendChild(parentElement)
 }
 
+var UrlVanDeSite= getData('https://b10bc-weu-httptriggertijsfunction-fa.azurewebsites.net/api/HelloWorld');
 
-async function getRequest(url) {
-  const res = await fetch(url);
+async function getRequest(UrlVanDeSite) {
+  const res = await fetch(UrlVanDeSite);
   if (res.ok) { 
       return res.json();
   } else {
@@ -22,9 +23,9 @@ async function getRequest(url) {
   }
 }
 
-async function getData(url) {
+async function getData(UrlVanDeSite) {
   try {
-    GlobalVariable= await getRequest(url);
+    GlobalVariable= await getRequest(UrlVanDeSite);
       GlobalVariable.forEach(menuItem => {
 
         var tableRow = document.createElement("tr");
@@ -65,7 +66,7 @@ async function getData(url) {
   }
 }
 
-var UrlVanDeSite= getData('https://b10bc-weu-httptriggertijsfunction-fa.azurewebsites.net/api/HelloWorld');
+
 
 function doEenDing() {
 
@@ -81,7 +82,7 @@ function doEenDing() {
   paragraph.appendChild(text); // Zet de text in de paragraph
   var element = document.getElementById("bestelling")//Pak de target div
   element.appendChild(paragraph); // Voeg nieuwe paragraaf aan target div
-
+  console.log(element)
 }
 function Betaling(x) {
   
@@ -93,8 +94,24 @@ function Betaling(x) {
   paragraph.appendChild(text)
   var element = document.getElementById("Betalen")//Pak de target div
   element.appendChild(paragraph); // Voeg nieuwe paragraaf aan target div
-  x.Betaling = true
-  btn1.style.display = 'none'
-  btn2.style.display = 'none'
+  x.Betaling = true;
+  btn1.style.display = 'none';
+  btn2.style.display = 'none';
+  fetch(url2, {
+    method: 'POST',   
+    headers: {   
+      'Accept': 'application/json',   
+      'Content-Type': 'application/json'  
+    },  
+    body: `{
+         "TotalPrice": ${Totalbedrag}    
+      }`, 
+    
+    });
+    
+  
+    }
 
-}
+
+
+
