@@ -4,6 +4,9 @@ var Totalbedrag = parseFloat(0)
 var GlobalVariable; 
 var url2 = "https://b10bc-weu-httptriggertijsfunction-fa.azurewebsites.net/api/tablefunction"
 
+var StringOfDishes= new Array();
+
+
 function addElementWithValueToParent(element, value, parent){
   var element = document.createElement(element);
   var text = document.createTextNode(value);
@@ -72,7 +75,9 @@ function doEenDing() {
 
   var paragraph = document.createElement("p");
   var ChosenDish = document.querySelector('input[name="Ordered"]:checked').value
- 
+  StringOfDishes.push(ChosenDish)
+  console.log(StringOfDishes)
+
   var IdOfDish = document.querySelector('input[name="Ordered"]:checked').id
   var PriceDish = GlobalVariable[IdOfDish].Price
 
@@ -97,19 +102,24 @@ function Betaling(x) {
   x.Betaling = true;
   btn1.style.display = 'none';
   btn2.style.display = 'none';
+  var DishList = StringOfDishes.toString()
+
+  var BodyJson =  `{
+    "TotalPrice": ${TotalEuro}, "TotalOrder":"${DishList}"
+ }`
+
   fetch(url2, {
     method: 'POST',   
     headers: {   
       'Accept': 'application/json',   
       'Content-Type': 'application/json'  
     },  
-    body: `{
-         "TotalPrice": ${Totalbedrag}    
-      }`, 
+    body:BodyJson, 
     
-    });
+    })
+    .then ((response) => alert("Thank you for the order of "+ TotalEuro + " Euro" ))
+    .catch((error)=>  alert("An error has occured"));
     
-  
     }
 
 
