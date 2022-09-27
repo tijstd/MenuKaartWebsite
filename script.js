@@ -108,8 +108,6 @@ function Betaling(x) {
     "TotalPrice": ${TotalEuro}, "TotalOrder":"${DishList}"
  }`
 
- console.log(BodyJson)
-
   fetch(url2, {
     method: 'POST',   
     headers: {   
@@ -118,9 +116,10 @@ function Betaling(x) {
     },  
     body:BodyJson, 
     
-    });
+    })
+    .then ((response) => alert("Thank you for the order of "+ TotalEuro + " Euro" ))
+    .catch((error)=>  alert("An error has occured"));
     
-  
     }
 
 
