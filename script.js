@@ -103,7 +103,7 @@ function Betaling(x) {
   btn1.style.display = 'none';
   btn2.style.display = 'none';
   var DishList = StringOfDishes.toString()
-
+//testest
   var BodyJson =  `{
     "TotalPrice": ${TotalEuro}, "TotalOrder":"${DishList}"
  }`
