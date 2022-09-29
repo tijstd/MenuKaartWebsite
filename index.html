@@ -3,12 +3,80 @@
 <head>
   <style>
     body {
-      background: greenyellow
+      background: #C4D600
     }
+
+    .navbar {
+  overflow: hidden;
+  background-color: #C4D600;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px greenyellow(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
   </style>
 </head>
 <body>
   <h1>Welcome at the Blue10 restaurant!</h1>
+  <hr>
+
+
+
+
+
+  <div class="navbar">
+    <a href="http://127.0.0.1:3000/index.html">Home</a>
+    <a href="http://127.0.0.1:3000/Newpage.html">Orders</a>
+  </div>
+
+
+
+
+
+
   <hr>
   <p> Here is our Menu: </p>
  
