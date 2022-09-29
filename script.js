@@ -75,7 +75,8 @@ function doEenDing() {
 
   var paragraph = document.createElement("p");
   var ChosenDish = document.querySelector('input[name="Ordered"]:checked').value
-  StringOfDishes.push(ChosenDish)
+  var DishString = "\""+ ChosenDish + "\""
+  StringOfDishes.push(DishString)
   console.log(StringOfDishes)
 
   var IdOfDish = document.querySelector('input[name="Ordered"]:checked').id
@@ -102,11 +103,11 @@ function Betaling(x) {
   x.Betaling = true;
   btn1.style.display = 'none';
   btn2.style.display = 'none';
-  var DishList = StringOfDishes.toString()
+
 // dit is een test
 
   var BodyJson =  `{
-    "TotalPrice": ${TotalEuro}, "TotalOrder":"${DishList}"
+    "TotalPrice": ${TotalEuro}, "TotalOrder":[${StringOfDishes}]
  }`
 
   fetch(url2, {

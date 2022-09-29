@@ -8,7 +8,7 @@
 
     .navbar {
   overflow: hidden;
-  background-color: #C4D600;
+  background-color:#C4D600;
 }
 
 .navbar a {
@@ -60,7 +60,7 @@
   </style>
 </head>
 <body>
-  <h1>Welcome at the Blue10 restaurant!</h1>
+  <h1>Completed orders</h1>
   <hr>
 
 
@@ -72,29 +72,15 @@
     <a href="http://127.0.0.1:3000/Newpage.html">Orders</a>
   </div>
 
+<hr>
 
+<h2>
+    Orders: 
+</h2>
 
+<table id="menuTable">
+</table>
 
-
-
-  <hr>
-  <p> Here is our Menu: </p>
- 
-  <table id="menuTable">
-  </table>
-  <br>
-  <hr>
-  <h3>Order: </h3>
-  <td> <button type="button" id="btn1" onclick="doEenDing()"> Order</button> </td>
-  <div id="bestelling">
-  </div>
-  <hr>
-  <td> <button type="button" id="btn2" onclick="Betaling(this)"> Check out</button> </td>
-  <h3>
-    <div id="Betalen">
-      <h1>Total amount in Euro's : </h1>
-    </div>
-  </h3>
 </body>
-<script src="script.js"></script>
+<script src="scriptOrderPage.js"></script>
 </html>
