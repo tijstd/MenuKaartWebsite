@@ -1,4 +1,7 @@
-
+function checkPswd() {
+    var confirmPassword = "123";
+    var password = document.getElementById("pswd").value;
+    if (password == confirmPassword) {
 var GlobalVariable; 
 
 function addElementWithValueToParent(element, value, parent){
@@ -71,6 +74,13 @@ async function getData(UrlVanDeSite) {
       console.log(e);
   }
 }
+
+    }      else{
+            alert("Passwords do not match.");
+        }
+    }
+
+
 
 
 
